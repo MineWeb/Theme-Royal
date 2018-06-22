@@ -228,9 +228,9 @@
                                               action="<?= $this->Html->url(array('action' => 'uploadSkin')) ?>">
                                             <div class="col-md-10">
                                                 <div class="form-group">
-                                                    <input type="button" class="btn btn-success" onclick="$('#choose').click();"
+                                                    <input type="button" class="btn btn-success" onclick="$('#chooseskin').click();"
                                                            value="Séléctionner votre skin"/>
-                                                    <input name="image" id="choose" class="btn btn-success" type="file"
+                                                    <input name="image" id="chooseskin" class="btn btn-success" type="file"
                                                            style="visibility:hidden">
                                                 </div>
                                                 <input name="data[_Token][key]" value="<?= $csrfToken ?>" type="hidden">
@@ -263,9 +263,9 @@
                                               action="<?= $this->Html->url(array('action' => 'uploadCape')) ?>">
                                             <div class="col-md-10">
                                                 <div class="form-group">
-                                                    <input type="button" class="btn btn-success" onclick="$('#choose').click();"
+                                                    <input type="button" class="btn btn-success" onclick="$('#choosecape').click();"
                                                            value="Séléctionner votre cape"/>
-                                                    <input name="image" id="choose" class="btn btn-success" type="file"
+                                                    <input name="image" id="choosecape" class="btn btn-success" type="file"
                                                            style="visibility:hidden">
                                                 </div>
                                                 <input name="data[_Token][key]" value="<?= $csrfToken ?>" type="hidden">
