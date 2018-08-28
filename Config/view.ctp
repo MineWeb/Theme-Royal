@@ -108,7 +108,7 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
                                             <input type="text" class="form-control" name="icon3" value="<?= $config['icon3'] ?>">
                                         </div>
                                         <div class="form-group">
-                                            <label>URL de l'image de fond</label>
+                                            <label>Titre</label>
                                             <input type="text" class="form-control" name="titre3" value="<?= $config['titre3'] ?>">
                                         </div>
                                         <div class="form-group">
