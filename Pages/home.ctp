@@ -144,6 +144,11 @@
                     </div>
                 </div>
                 <?php } ?>
+                <?php if ($i == 0) { ?>
+                <div class="alert alert-danger">
+                    <p>Aucune News ont été postés.</p>
+                </div>
+                <?php }?>
             </div>
         </div>
     </div>
