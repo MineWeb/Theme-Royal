@@ -14,9 +14,6 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
     <div class="col-md-4">
         <div class="callout callout-warning" style="border: none;"><h4>Page de personnalisation</h4>Cette page est en développement, des paramètres de personnalisation supplémentaire serront bientôt ajoutés.</div>
     </div>
-    <div class="col-md-4">
-        <div class="callout callout-danger" style="border: none;"><h4>Copyright : Mineweb & Royal</h4>Il est interdit de modifier les crédits du footer.<br>Votre licence sera suspendue si vous le faites.</div>
-    </div>
     <div class="row">
         <form method="post" enctype="multipart/form-data" data-ajax="false">
             <div class="col-md-12">
