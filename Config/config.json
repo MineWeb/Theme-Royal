@@ -2,7 +2,7 @@
    "name":"Royal",
    "slug":"Royal",
    "author":"Skill",
-   "version":"1.0.1",
+   "version":"1.0.2",
    "slider":false,
    "configurations":{
       "welcome":"Bienvenue sur Royal !",
