@@ -135,6 +135,16 @@
               </div>
             </div>
           <?php } ?>
+          <?php if (empty($condition)) { ?>
+              <div class="form-group">
+                <div class="checkbox col-sm-12">
+                    <label>
+                        <input type="checkbox" name="condition">
+                        <?=$Lang->get('USER__CONDITION_1')?> <a href="<?= $condition ?>"> <?= $Lang->get('USER__CONDITION_2')?></a>
+                    </label>
+                </div>
+              </div>
+		  <?php } ?>
       </div>
       <div class="modal-footer">
         <button type="submit" style="width: 100%;" class="btn btn-primary"><?= $Lang->get('USER__REGISTER') ?></button>
