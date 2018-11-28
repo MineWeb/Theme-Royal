@@ -25,9 +25,17 @@
                             <?php $i = 0; ?>
                             <?php foreach ($nav as $key => $value): ?>
                                 <?php if(empty($value['Navbar']['submenu'])): ?>
-                                    <li class="<?php if($this->here == $value['Navbar']['url']) { ?>current<?php } ?>"><a href="<?= $value['Navbar']['url'] ?>"><?= $value['Navbar']['name'] ?></a></li>
+                                    <li class="<?php if($this->here == $value['Navbar']['url']) { ?>current<?php } ?>"><a href="<?= $value['Navbar']['url'] ?>">
+                                    <?php if(!empty($value['Navbar']['icon'])): ?>
+                                        <i class="fa fa-<?= $value['Navbar']['icon'] ?>"></i>
+                                    <?php endif; ?>
+                                    <?= $value['Navbar']['name'] ?>
+                                    </a></li>
                                 <?php else: ?>
                                     <li>
+                                        <?php if(!empty($value['Navbar']['icon'])): ?>
+                                            <i class="fa fa-<?= $value['Navbar']['icon'] ?>"></i>
+                                        <?php endif; ?>
                                         <a href="#"><?= $value['Navbar']['name'] ?></a>
                                         <ul>
                                             <?php
@@ -55,8 +63,13 @@
                                     Membre
                                 </div>
                                 <ul>
-                                    <li><a href="#" data-toggle="modal" data-target="#login"><i class="fa fa-sign-in" aria-hidden="true"></i> Connexion</a></li>
-                                    <li><a href="#" data-toggle="modal" data-target="#register"><i class="fa fa-user-plus" aria-hidden="true"></i> Inscription</a></li>
+                                    <?php if($EyPlugin->isInstalled('phpierre.signinup')) { ?>
+                                       <li><a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Connexion</a></li>
+                                        <li><a href="/register"><i class="fa fa-user-plus" aria-hidden="true"></i> Inscription</a></li>
+                                    <?php } else { ?>
+                                        <li><a href="#" data-toggle="modal" data-target="#login"><i class="fa fa-sign-in" aria-hidden="true"></i> Connexion</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#register"><i class="fa fa-user-plus" aria-hidden="true"></i> Inscription</a></li>
+                                    <?php } ?>
                                 </ul>
                             </div>
                         </div>
