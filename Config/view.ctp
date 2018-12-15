@@ -8,14 +8,11 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
 ?>
 
 <section class="content">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <div class="callout callout-success" style="border: none;"><h4>Suggestions & Support</h4>Je suis disponible sur le Discord de MineWeb ou en message privé pour toutes demandes : Skill !</div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
         <div class="callout callout-warning" style="border: none;"><h4>Page de personnalisation</h4>Cette page est en développement, des paramètres de personnalisation supplémentaire serront bientôt ajoutés.</div>
-    </div>
-    <div class="col-md-4">
-        <div class="callout callout-danger" style="border: none;"><h4>Copyright : Mineweb & Royal</h4>Il est interdit de modifier les crédits du footer.<br>Vous n'aurait plus de support et vous serez bannis du discord si vous le faites.</div>
     </div>
     <div class="row">
         <form method="post" enctype="multipart/form-data" data-ajax="false">
