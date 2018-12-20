@@ -45,7 +45,7 @@
                     <div class="well" style="background-color: #fff;">
                         <?php if(isset($v['Item']['img_url'])) { ?><img src="<?= $v['Item']['img_url'] ?>" alt=""><?php } ?>
                         <div class="caption" style="height:auto;">
-                            <center><h4><?= before_display($v['Item']['name']) ?>.</h4></center>
+                            <center><h4><?= before_display($v['Item']['name']) ?></h4></center>
                             <?php if($isConnected AND $Permissions->can('CAN_BUY')) { ?><a class="btn btn-success btn-block display-item" data-item-id="<?= $v['Item']['id'] ?>"><?= $Lang->get('SHOP__BUY') ?> pour <?= $v['Item']['price'] ?><?php if($v['Item']['price'] == 1) { echo  ' '.$singular_money; } else { echo  ' '.$plural_money; } ?></a> <?php } ?>
                         </div>
                     </div>
