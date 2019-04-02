@@ -10,6 +10,16 @@
     <?= $this->Html->css('new-style.css') ?>
     <?= $this->Html->css('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') ?>
     <?= $this->Html->script('jquery-2.2.4.js') ?>
+    <meta property="og:title" content="<?= $website_name ?>">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; ?>">
+    <meta property="og:image" content="<?php echo "http://".$_SERVER['SERVER_NAME']; ?>/img/uploads/theme_logo.png">
+    <meta property="og:image:alt" content="<?= $website_name ?> Icon">
+    <meta property="og:description" content="<?= $website_name ?> - Serveur Minecraft">
+    <meta property="og:site_name" content="<?= $website_name ?> - Minecraft" />
+    <meta name="twitter:title" content="<?= $website_name ?> - Minecraft">
+    <meta name="twitter:description" content="<?= $website_name ?> - Serveur Minecraft">
+    <meta name="twitter:image" content="http://".$_SERVER['SERVER_NAME']; ?>/img/uploads/theme_logo.png">
 </head>
 <body>
 <div id="wrapper">
