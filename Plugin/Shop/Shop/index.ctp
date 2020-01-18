@@ -15,7 +15,7 @@
         </div>
         <div class="list-group">
             <?php if($isConnected) { ?>
-                <a href="#" class="list-group-item">Vous avez <?= ($isConnected) ? $money.' '.$Configuration->getMoneyName() : $Lang->get('SHOP__TITLE'); ?></a>
+                <a href="#" class="list-group-item">Vous avez <?= ($isConnected) ? $money : $Lang->get('SHOP__TITLE'); ?></a>
             <?php } else { ?>
                 <a href="#" class="list-group-item">Vous n'êtes pas connecté.</a>
             <?php } ?>
