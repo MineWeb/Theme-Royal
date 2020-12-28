@@ -241,12 +241,6 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
                         <div class="tab-pane" id="tab_other">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label><?= $Lang->get('THEME__FAVICON_URL') ?></label>
-                                        <input type="text" class="form-control" name="favicon_url" value="<?= $config['favicon_url'] ?>">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
                                     <?= $this->element('form.input.upload.img', $form_input) ?>
                                 </div>
                                 <div class="col-md-12">
