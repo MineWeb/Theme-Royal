@@ -8,10 +8,10 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
 ?>
 
 <section class="content">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <div class="callout callout-success" style="border: none;"><h4>Suggestions & Support</h4>Je suis disponible sur le Discord de MineWeb ou en message privé pour toutes demandes : Skill !</div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
         <div class="callout callout-warning" style="border: none;"><h4>Page de personnalisation</h4>Cette page est en développement, des paramètres de personnalisation supplémentaire serront bientôt ajoutés.</div>
     </div>
     <div class="row">
