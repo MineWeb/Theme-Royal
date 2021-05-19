@@ -19,9 +19,9 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
             <div class="col-md-12">
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab_accueil" data-toggle="tab">Accueil</a></li>
-                        <li><a href="#tab_footer" data-toggle="tab">Footer</a></li>
-                        <li><a href="#tab_other" data-toggle="tab">Autres options</a></li>
+                        <li class="active"><a class="nav-link text-dark " href="#tab_accueil" data-toggle="tab">Accueil</a></li>
+                        <li><a class="nav-link text-dark" href="#tab_footer" data-toggle="tab">Footer</a></li>
+                        <li><a class="nav-link text-dark" href="#tab_other" data-toggle="tab">Autres options</a></li>
                     </ul>
                     <div class="tab-content" style="padding: 15px;">
                         <div class="tab-pane active" id="tab_accueil">
@@ -71,7 +71,7 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-15">
                                         <div class="form-group">
                                             <label>Icône Font Awesome</label>
                                             <input type="text" class="form-control" name="icon1" value="<?= $config['icon1'] ?>">
@@ -85,7 +85,7 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
                                             <textarea class="form-control" rows="4" name="contenu1"><?= $config['contenu1'] ?></textarea>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-20">
                                         <div class="form-group">
                                             <label>Icône Font Awesome</label>
                                             <input type="text" class="form-control" name="icon2" value="<?= $config['icon2'] ?>">
@@ -99,7 +99,7 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
                                             <textarea class="form-control" rows="4" name="contenu2"><?= $config['contenu2'] ?></textarea>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-20">
                                         <div class="form-group">
                                             <label>Phrase de présentation</label>
                                             <input type="text" class="form-control" name="icon3" value="<?= $config['icon3'] ?>">
